@@ -16,7 +16,7 @@ https://youtu.be/os-si55F9Lg
 
 ## Uygulama İçi Görüntüler
 
-![1](app_pictures/tarifka_1.png = 300x500)
+![1](app_pictures/tarifka_1.png)
 
 ![2](app_pictures/tarifka_2.png)
 
