@@ -16,10 +16,10 @@ https://youtu.be/os-si55F9Lg
 
 ## Uygulama İçi Görüntüler
 
-![1](app_pictures/tarifka_1.PNG)
+![1](app_pictures/tarifka_1.png)
 
-![2](app_pictures/tarifka_2.PNG)
+![2](app_pictures/tarifka_2.png)
 
-![3](app_pictures/tarifka_3.PNG)
+![3](app_pictures/tarifka_3.png)
 
-![4](app_pictures/tarifka_4.PNG)
+![4](app_pictures/tarifka_4.png)
