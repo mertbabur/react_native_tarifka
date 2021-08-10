@@ -4,6 +4,8 @@ import styles from './Meals.style';
 import useFetch from "../../hooks/useFetch";
 import MealsCard from "../../components/MealsCard";
 import {useNavigation} from "@react-navigation/native";
+import Loading from "../../components/Loading";
+import Error from "../../components/Error";
 
 let API_URL = "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
 
@@ -17,6 +19,14 @@ const Meals = ({route}) => {
     }
 
     const renderMeals = ({item}) => <MealsCard meal={item} onSelect={() => handleMealSelect(item.idMeal)} />;
+
+    if(loading){
+        return <Loading />;
+    }
+
+    if(error){
+        return <Error />
+    }
 
     return(
         <SafeAreaView style={styles.container}>

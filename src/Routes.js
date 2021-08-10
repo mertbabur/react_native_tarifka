@@ -14,17 +14,20 @@ const Router = () => {
                 <Stack.Screen name={"CategoriesPage"} component={Categories} options={{
                     title: 'Categories',
                     headerTitleStyle:{color: '#ffa500'},
-                    headerTitleAlign: 'center'
+                    headerTitleAlign: 'center',
+                    headerTintColor: '#ffa500'
                 }}/>
                 <Stack.Screen name={"MealsPage"} component={Meals} options={{
                     title: 'Meals',
                     headerTitleStyle:{color: '#ffa500'},
-                    headerTitleAlign: 'center'
+                    headerTitleAlign: 'center',
+                    headerTintColor: '#ffa500'
                 }}/>
                 <Stack.Screen name={"DetailPage"} component={Detail} options={{
                     title: 'Detail',
                     headerTitleStyle:{color: '#ffa500'},
-                    headerTitleAlign: 'center'
+                    headerTitleAlign: 'center',
+                    headerTintColor: '#ffa500'
                 }}/>
             </Stack.Navigator>
         </NavigationContainer>

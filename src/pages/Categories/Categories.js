@@ -4,6 +4,8 @@ import useFetch from "../../hooks/useFetch";
 import styles from './Categories.style';
 import CategoriesCard from "../../components/CategoriesCard";
 import {useNavigation} from "@react-navigation/native";
+import Loading from "../../components/Loading";
+import Error from "../../components/Error";
 
 let API_URL = "https://www.themealdb.com/api/json/v1/1/categories.php";
 
@@ -16,6 +18,14 @@ const Categories = () => {
     }
 
     const renderCategories = ({item}) => <CategoriesCard category={item} onSelect={() => handleMealSelect(item.strCategory)}/>;
+
+    if(loading){
+        return <Loading />;
+    }
+
+    if(error){
+        return <Error />
+    }
 
     return(
         <SafeAreaView style={styles.container}>
